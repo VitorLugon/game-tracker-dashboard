@@ -26,4 +26,4 @@ AGENTS.md
 /tasks
 /tmp
 /test-results
-ts-config.json
+tsconfig.json

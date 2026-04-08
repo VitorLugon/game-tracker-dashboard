@@ -107,7 +107,6 @@
     }
   }
 
-  /* Game Card: Estilo mais agressivo e tecnológico */
   .game-card {
     @apply bg-dark-100 p-4 rounded-2xl border border-white/5 hover:border-neon-green/50 transition-all duration-300;
 
@@ -145,14 +144,11 @@
   }
 }
 
-/* Utilitários Customizados */
 @utility text-gradient {
-  /* Gradiente Neon */
   @apply bg-linear-to-r from-neon-cyan to-neon-green bg-clip-text text-transparent;
 }
 
 @utility fancy-number {
-  /* Números grandes atrás dos posters no Trending */
   -webkit-text-stroke: 2px rgba(6, 182, 212, 0.5);
   color: transparent;
   font-size: 150px;
