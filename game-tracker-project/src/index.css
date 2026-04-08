@@ -99,31 +99,31 @@
     }
   }
 
-  .game-grid {
-    @apply space-y-9 mt-16;
+  .all-games {
+    @apply space-y-7 mt-14;
 
     & ul {
-      @apply grid grid-cols-1 gap-8 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+      @apply grid grid-cols-2 gap-4 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-4;
     }
   }
 
   .game-card {
-    @apply bg-dark-100 p-4 rounded-2xl border border-white/5 hover:border-neon-green/50 transition-all duration-300;
+    @apply bg-dark-100 p-3 mt-2 rounded-xl border border-white/5 hover:border-neon-green/50 transition-all duration-300;
 
     & .poster-container {
       @apply relative overflow-hidden rounded-xl;
     }
 
     & img {
-      @apply rounded-xl h-auto w-full transition-transform duration-500 hover:scale-110;
+      @apply rounded-lg w-full aspect-[3/4] object-cover transition-transform duration-500 hover:scale-105;
     }
 
     & h3 {
-      @apply text-white font-bold text-lg line-clamp-1 mt-4;
+      @apply text-white font-bold text-sm line-clamp-1 mt-3;
     }
 
     & .content {
-      @apply mt-3 flex flex-row items-center flex-wrap gap-3;
+      @apply mt-2 flex flex-row items-center flex-wrap gap-2;
     }
 
     & .rating {
@@ -131,7 +131,7 @@
     }
 
     & .rating p {
-      @apply font-bold text-sm text-neon-green;
+      @apply font-bold text-xs text-neon-green;
     }
 
     & .platform-tag {
@@ -139,7 +139,7 @@
     }
 
     & .year {
-      @apply text-gray-100 font-medium text-sm ml-auto;
+      @apply text-gray-100 font-medium text-xs ml-auto;
     }
   }
 }

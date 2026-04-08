@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Search from './components/Search.jsx'
 import Spinner from './components/Spinner.jsx';
+import GameCard from './components/GameCard.jsx';
 
 const API_BASE_URL = 'https://api.rawg.io/api/games';
 
@@ -72,7 +73,7 @@ const App = () => {
         </header>
 
         <section className='all-games'>
-            <h2 className='mt-[40px]'>Todos os Jogos</h2>
+            <h2 className='mt-10'>Todos os Jogos</h2>
 
             {isLoading ? (
               <Spinner />
@@ -81,7 +82,7 @@ const App = () => {
             ): (
               <ul>
                 {gameList.map((game)=> (
-                  <p key={game.id} className='text-white'>{game.name}</p>
+                  <GameCard key={game.id} game={game} />
                 ))}
               </ul>
             )}
